@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-# from .mocks import Post
+#from .mocks import Post
 from .models import Post
 
 def index(request):
