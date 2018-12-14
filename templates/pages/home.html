@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html'%}
+
+{% block title %}Home page | Acme{% endblock %}
+
+{% block content %}
+<h1>Bienveue sur mon site</h1>
+
+<p><a href="{% url 'blog:index' %}"> Visiter notre Blog</a></p>
+
+{% endblock %}
