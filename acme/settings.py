@@ -25,7 +25,7 @@ SECRET_KEY = '1x&fjvk#e%aa-n6pb8*-*p8vjkbob2aenshne&*)3r-&#y9gos'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['acme-blog.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
-    'rest_framework',
-    'webapp',
+    
 ]
 
 MIDDLEWARE = [
@@ -126,10 +125,3 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
     )
 
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-}
